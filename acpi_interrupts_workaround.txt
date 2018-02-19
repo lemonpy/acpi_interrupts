@@ -1,0 +1,19 @@
+grep . -r /sys/firmware/acpi/interrupts/
+cp /sys/firmware/acpi/interrupts/gpe13 /pathtobackup
+crontab -e
+@reboot echo "disable" > /sys/firmware/acpi/interrupts/gpe13
+~ touch /etc/pm/sleep.d/30_disable_gpe13
+~ chmod +x /etc/pm/sleep.d/30_disable_gpe13
+~ vim /etc/pm/sleep.d/30_disable_gpe13
+
+#!/bin/bash
+case "$1" in
+    thaw|resume)
+        echo disable > /sys/firmware/acpi/interrupts/gpe13 2>/dev/null
+        ;;
+    *)
+        ;;
+esac
+exit $?
+
+http://sudoremember.blogspot.com.ar/2013/05/high-cpu-usage-due-to-kworker.html
