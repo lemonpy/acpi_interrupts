@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/lemonpy/Documentos/FaMaF/3ero/Redes/2017'
-let g:netrw_dirhist_2='/home/lemonpy/Documentos/FaMaF/3ero/Redes/2017/labs'
-let g:netrw_dirhist_3='/home/lemonpy/Documentos/FaMaF/3ero/Redes/2017/labs/lab1g29'
-let g:netrw_dirhist_4='/home/lemonpy/Documentos/FaMaF/3ero/Redes/2017/labs'
-let g:netrw_dirhist_5='/home/lemonpy/Documentos/FaMaF/3ero/Redes/2017/labs/lab1g29'
