@@ -1,0 +1,14 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+      create: true
+
+- clean: ['~']
+
+- link:
+    ~/.xprofile: xprofile
+    ~/.doom.d/:
+      glob: true
+      path: doom.d/*
+      relink: true
