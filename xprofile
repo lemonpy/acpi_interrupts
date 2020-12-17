@@ -8,7 +8,7 @@ export PATH="$HOME/.local/bin:$PATH"
 picom -b &
 nm-applet &
 volumeicon &
-nitrogen --restore &
+#nitrogen --restore &
 xfce4-power-manager &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 gnome-keyring-daemon --start --components=pkcs11 &
@@ -24,3 +24,8 @@ setxkbmap dvorak
 xinput --set-prop "ETPS/2 Elantech Touchpad" "libinput Natural Scrolling Enabled" 1
 xinput --set-prop "ETPS/2 Elantech Touchpad" "libinput Accel Speed" 0.2
 setxkbmap -model "" -option "" -layout "us" -variant "dvorak"
+
+# wallpaper
+WALLPAPER=~/Pictures/ciudad_neon
+feh --bg-fill $WALLPAPER &
+wal -i $WALLPAPER

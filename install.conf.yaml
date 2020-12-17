@@ -12,3 +12,7 @@
       glob: true
       path: doom.d/*
       relink: true
+    ~/.config/i3/config: 
+      path: config/i3/config 
+      create: true
+    ~/.zshrc: zshrc
