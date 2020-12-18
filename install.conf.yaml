@@ -5,6 +5,8 @@
       create: true
 
 - clean: ['~']
+    ~/.config:
+      recursive: true
 
 - link:
     ~/.xprofile: xprofile
