@@ -3,12 +3,40 @@
       relink: true
       force: true
       create: true
-      stdin: true
-      stdout: true
-      stderr: true
 
 - clean: ['~']
 
+- create:
+     - ~/.config/pacman
+
+- shell:
+     - echo hola
+#    - 
+#      command: sudo pacman -S --needed - < pacman-packages.list
+#      stdin: true
+#      stdout: true
+#      stderr: true
+#    - 
+#      command: git clone https://aur.archlinux.org/yay.git; cd yay; makepkg -si
+#      stdin: true
+#      stdout: true
+#      stderr: true
+#    - 
+#      command: yay -S --needed - < yay-packages.list
+#      stdin: true
+#      stdout: true
+#      stderr: true
+#    -
+#      command: rm -rf yay/
+#
+#    - 
+#      command: chmod +x ./pacman-hooks
+#      description: pacman-hooks creates a symlink to /ect/pacman.d/hooks to mantain {pacman/yay}-packages.list updated
+#    -
+#      command: ./pacman-hooks
+#      stdin: true
+#      stdout: true
+#      stderr: true
 - link:
     ~/.xprofile: xprofile
     ~/.doom.d/:
@@ -20,21 +48,3 @@
       create: true
     ~/.zshrc: zshrc
 
-- shell:
-    - 
-      command: sudo pacman -S --needed - < pacman-packages.list
-      stdin: true
-      stdout: true
-      stderr: true
-    - 
-      command: git clone https://aur.archlinux.org/yay.git; cd yay; makepkg -si
-      stdin: true
-      stdout: true
-      stderr: true
-    - 
-      command: yay -S --needed - < yay-packages.list
-      stdin: true
-      stdout: true
-      stderr: true
-    -
-      command: rm -rf yay/
