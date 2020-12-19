@@ -1,8 +1,6 @@
 - defaults:
     link:
       relink: true
-      force: true
-      create: true
 
 - clean: ['~']
 
@@ -10,7 +8,6 @@
      - ~/.config/pacman
 
 - shell:
-     - echo hola
 #    - 
 #      command: sudo pacman -S --needed - < pacman-packages.list
 #      stdin: true
@@ -32,11 +29,12 @@
 #    - 
 #      command: chmod +x ./pacman-hooks
 #      description: pacman-hooks creates a symlink to /ect/pacman.d/hooks to mantain {pacman/yay}-packages.list updated
-#    -
-#      command: ./pacman-hooks
-#      stdin: true
-#      stdout: true
-#      stderr: true
+    -
+      command: ./hook-setup
+      stdin: true
+      stdout: true
+      stderr: true
+
 - link:
     ~/.xprofile: xprofile
     ~/.doom.d/:
@@ -47,4 +45,4 @@
       path: config/i3/config 
       create: true
     ~/.zshrc: zshrc
-
+    ~/.config/pacman/pacman.hook: pacman.hook
