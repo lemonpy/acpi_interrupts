@@ -5,8 +5,6 @@
       create: true
 
 - clean: ['~']
-    ~/.config:
-      recursive: true
 
 - link:
     ~/.xprofile: xprofile
@@ -18,3 +16,15 @@
       path: config/i3/config 
       create: true
     ~/.zshrc: zshrc
+
+- shell:
+    - 
+      command: sudo pacman -S --needed - < pacman-packages.list
+      stdin: true
+      stdout: true
+      stderr: true
+    - 
+      command: yay -S --needed - < yay-packages.list
+      stdin: true
+      stdout: true
+      stderr: true
