@@ -2,6 +2,3 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "yay"]
-	path = yay
-	url = git@github.com:Jguer/yay.git

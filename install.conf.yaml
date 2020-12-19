@@ -3,6 +3,9 @@
       relink: true
       force: true
       create: true
+      stdin: true
+      stdout: true
+      stderr: true
 
 - clean: ['~']
 
@@ -24,7 +27,14 @@
       stdout: true
       stderr: true
     - 
+      command: git clone https://aur.archlinux.org/yay.git; cd yay; makepkg -si
+      stdin: true
+      stdout: true
+      stderr: true
+    - 
       command: yay -S --needed - < yay-packages.list
       stdin: true
       stdout: true
       stderr: true
+    -
+      command: rm -rf yay/
