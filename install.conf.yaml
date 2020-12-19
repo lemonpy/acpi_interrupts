@@ -5,32 +5,35 @@
 - clean: ['~']
 
 - create:
-     - ~/.config/pacman
+    - ~/.config/pacman   
+
+# We need this linking made before generate_hooks command executes
+- link:
+    ~/.config/pacman/pacman-packages: pacman-packages
+    ~/.config/pacman/yay-packages: yay-packages
 
 - shell:
-#    - 
-#      command: sudo pacman -S --needed - < pacman-packages.list
-#      stdin: true
-#      stdout: true
-#      stderr: true
-#    - 
-#      command: git clone https://aur.archlinux.org/yay.git; cd yay; makepkg -si
-#      stdin: true
-#      stdout: true
-#      stderr: true
-#    - 
-#      command: yay -S --needed - < yay-packages.list
-#      stdin: true
-#      stdout: true
-#      stderr: true
-#    -
-#      command: rm -rf yay/
-#
-#    - 
-#      command: chmod +x ./pacman-hooks
-#      description: pacman-hooks creates a symlink to /ect/pacman.d/hooks to mantain {pacman/yay}-packages.list updated
+    - 
+      command: sudo pacman -S --needed - < pacman-packages
+      stdin: true
+      stdout: true
+      stderr: true
+    - 
+      command: git clone https://aur.archlinux.org/yay.git; cd yay; makepkg -si
+      stdin: true
+      stdout: true
+      stderr: true
+    - 
+      command: yay -S --needed - < yay-packages
+      stdin: true
+      stdout: true
+      stderr: true
     -
-      command: ./hook-setup
+      command: rm -rf yay/
+
+    - 
+      command: ./generate_hook.sh
+      description: Create hooks to mantain pacman|yay-packages updated
       stdin: true
       stdout: true
       stderr: true
@@ -45,4 +48,3 @@
       path: config/i3/config 
       create: true
     ~/.zshrc: zshrc
-    ~/.config/pacman/pacman.hook: pacman.hook
