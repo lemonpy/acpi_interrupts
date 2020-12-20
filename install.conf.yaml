@@ -7,11 +7,6 @@
 - create:
     - ~/.config/pacman   
 
-# We need this linking made before generate_hooks command executes
-- link:
-    ~/.config/pacman/pacman-packages: pacman-packages
-    ~/.config/pacman/yay-packages: yay-packages
-
 - shell:
     - 
       command: sudo pacman -S --needed - < pacman-packages
@@ -48,3 +43,6 @@
       path: config/i3/config 
       create: true
     ~/.zshrc: zshrc
+    ~/.config/pacman/pacman-packages: pacman-packages
+    ~/.config/pacman/yay-packages: yay-packages
+
