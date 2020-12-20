@@ -25,10 +25,15 @@
       stderr: true
     -
       command: rm -rf yay/
-
     - 
       command: ./generate_hook.sh
       description: Create hooks to mantain pacman|yay-packages updated
+      stdin: true
+      stdout: true
+      stderr: true
+    -
+      command: ./wal-setup.sh
+      description: Handy script to setup wal and rofi related stuff
       stdin: true
       stdout: true
       stderr: true
