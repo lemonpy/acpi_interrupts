@@ -7,11 +7,6 @@
 - create:
     - ~/.config/pacman   
 
-# We need this linking made before generate_hooks command executes
-- link:
-    ~/.config/pacman/pacman-packages: pacman-packages
-    ~/.config/pacman/yay-packages: yay-packages
-
 - shell:
     - 
       command: sudo pacman -S --needed - < pacman-packages
@@ -30,10 +25,15 @@
       stderr: true
     -
       command: rm -rf yay/
-
     - 
       command: ./generate_hook.sh
       description: Create hooks to mantain pacman|yay-packages updated
+      stdin: true
+      stdout: true
+      stderr: true
+    -
+      command: ./wal-setup.sh
+      description: Handy script to setup wal and rofi related stuff
       stdin: true
       stdout: true
       stderr: true
