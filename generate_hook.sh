@@ -40,4 +40,4 @@ When = PostTransaction
 Exec = /bin/sh -c '/usr/bin/pacman -Qqem > ${HOME}/.config/pacman/${YAYPKG}'
 EOF
 
-sudo mv -b pacman-packages.hook yay-packages.hook /usr/share/libalpm/hooks/
+sudo mv -b ${PACMANPKG}.hook ${YAYPKG}.hook /usr/share/libalpm/hooks/
