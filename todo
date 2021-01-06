@@ -1,0 +1,2 @@
+run rofi -dump-config > ~/.config/rofi/config.rosi
+append after the last '}' \n// Dark theme.\n @import "~/.cache/wal/colors-rofi-dark"
