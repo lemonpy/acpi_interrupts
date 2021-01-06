@@ -3,6 +3,7 @@ alacritty
 alsa-firmware
 alsa-lib
 alsa-plugins
+amd-ucode
 arandr
 arch-install-scripts
 archlabs-baph
@@ -31,6 +32,7 @@ bluez-tools
 bluez-utils
 cowsay
 crda
+cronie
 ddrescue
 dhclient
 dhcpcd
@@ -40,6 +42,7 @@ dmraid
 dnsmasq
 dosfstools
 dunst
+efibootmgr
 emacs
 ethtool
 evince
@@ -101,6 +104,7 @@ nilfs-utils
 nitrogen
 nmap
 noto-fonts
+noto-fonts-cjk
 noto-fonts-emoji
 ntp
 openconnect
@@ -130,6 +134,7 @@ ripgrep
 rp-pppoe
 rsync
 scrot
+sddm
 sdparm
 sg3_utils
 steam

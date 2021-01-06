@@ -29,3 +29,4 @@ setxkbmap -model "" -option "" -layout "us" -variant "dvorak"
 WALLPAPER=~/Pictures/ciudad_neon
 feh --bg-fill $WALLPAPER &
 wal -i $WALLPAPER
+~/.fehbg

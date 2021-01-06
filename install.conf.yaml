@@ -52,4 +52,5 @@
     ~/.zshrc: zshrc
     ~/.config/pacman/pacman-packages: pacman-packages
     ~/.config/pacman/yay-packages: yay-packages
+    ~/Pictures/cuidad_neon: wallpaper.jpg
 
