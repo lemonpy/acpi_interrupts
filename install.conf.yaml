@@ -39,6 +39,12 @@
       stdin: true
       stdout: true
       stderr: true
+    -
+      command: ./ly-setup.sh
+      description: Handy script to setup ly (login manager) and its configuration
+      stdin: true
+      stdout: true
+      stderr: true
 
 - link:
     ~/.xprofile: xprofile
