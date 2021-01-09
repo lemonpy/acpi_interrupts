@@ -1,4 +1,5 @@
 accountsservice
+acpi_call
 alacritty
 alsa-firmware
 alsa-lib
@@ -30,6 +31,7 @@ bluez-hid2hci
 bluez-plugins
 bluez-tools
 bluez-utils
+brightnessctl
 cowsay
 crda
 cronie
@@ -145,6 +147,8 @@ terminus-font
 termite
 testdisk
 texinfo
+tlp
+tlp-rdw
 transmission-cli
 transmission-gtk
 ttf-anonymous-pro
