@@ -30,5 +30,3 @@ WALLPAPER=~/Pictures/ciudad_neon
 feh --bg-fill $WALLPAPER &
 wal -i $WALLPAPER
 ~/.fehbg
-
-eval `ssh-agent -s` &
