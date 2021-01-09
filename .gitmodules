@@ -2,3 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "ly"]
+	path = ly
+	url = https://github.com/nullgemm/ly
