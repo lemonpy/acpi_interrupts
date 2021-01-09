@@ -90,6 +90,7 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 linux-firmware
 linux-zen
+linux-zen-headers
 lm_sensors
 lsb-release
 lsscsi
@@ -149,6 +150,7 @@ testdisk
 texinfo
 tlp
 tlp-rdw
+tpacpi-bat
 transmission-cli
 transmission-gtk
 ttf-anonymous-pro
