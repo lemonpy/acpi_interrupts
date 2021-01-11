@@ -130,6 +130,7 @@ ppp
 pptpclient
 pulseaudio
 pulseaudio-alsa
+pulseaudio-bluetooth
 python-pywal
 qt5ct
 reflector
