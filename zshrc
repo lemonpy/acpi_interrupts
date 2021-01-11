@@ -209,3 +209,5 @@ prompt adam1
 eval `ssh-agent -s &> /dev/null`
 (cat ~/.cache/wal/sequences &)
 export PATH=$PATH:~/.emacs.d/bin
+alias toggleMic="pactl set-source-mute 1 toggle"
+
