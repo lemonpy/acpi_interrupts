@@ -211,3 +211,4 @@ eval `ssh-agent -s &> /dev/null`
 export PATH=$PATH:~/.emacs.d/bin
 alias toggleMic="pactl set-source-mute 1 toggle"
 alias startBluetoothService="sudo systemctl start bluetooth.service"
+alias qwerty="setxkbmap dvorak"
